@@ -1,0 +1,22 @@
+﻿@{
+
+}
+
+
+
+<div>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        
+        <br />
+        @Html.TextBox("id")
+        <button type="submit" value="Submit" name="btnSubmit">Submit</button>
+        <h3> Unit Test Index View </h3>
+        <h2> ID is less than 5 </h2>
+        <h2> ID is @ViewBag.ID </h2>
+
+    }
+
+
+
+</div>
